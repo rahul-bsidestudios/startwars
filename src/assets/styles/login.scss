@@ -1,0 +1,25 @@
+.login-box {
+	  max-width: 500px;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+    button {
+    	margin-top: 20px;
+    }
+    h1 {
+    	margin-bottom: 20px;
+    }
+    input {
+    	margin-bottom: 20px;
+    }
+    .help-block {
+    	color: red;
+	    margin-top: -10px;
+	    text-align: left;
+	    margin-bottom: 10px;
+    }
+    img {
+    	margin-top: 15px;
+    	margin-left: 5px;
+    }
+}

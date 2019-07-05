@@ -1,0 +1,31 @@
+.wrapper {
+  padding: 20px; }
+  .wrapper .input-wrap {
+    position: relative;
+    max-width: 320px; }
+    .wrapper .input-wrap input {
+      padding: 10px;
+      min-width: 320px; }
+    .wrapper .input-wrap img {
+      position: absolute;
+      top: 15px;
+      right: 0px; }
+  .wrapper label {
+    font-weight: bold;
+    margin-right: 10px; }
+  .wrapper .list {
+    margin-top: 20px; }
+    .wrapper .list ul {
+      list-style: none;
+      display: inline-block;
+      border: 1px solid;
+      margin-top: -20px;
+      min-width: 320px;
+      padding: 0; }
+      .wrapper .list ul li {
+        background: #f9f9f9;
+        padding: 6px 10px;
+        border-bottom: 1px solid;
+        cursor: pointer; }
+        .wrapper .list ul li:hover {
+          background: lightblue; }
