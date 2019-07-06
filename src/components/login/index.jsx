@@ -7,7 +7,7 @@ import {
   Col
 } from "react-bootstrap";
 
-import '../../assets/styles/login.css?v=1.2';
+import '../../assets/styles/login.css';
 
 const mapDispatchToProps = dispatch => {
   return { 
@@ -39,10 +39,11 @@ class Login extends Component {
   }
 
   handleSubmit(e) {
-    e.preventDefault();
     this.setState({ submitted: true });
     const { userName, password } = this.state;
+    console.log(this.state);
     if (userName && password) {
+      console.log(this.props)
       this.props.login(userName, password);
     }
   }
@@ -54,9 +55,9 @@ class Login extends Component {
       <div className="content login-box">
         <Container fluid>
           <Row>
-            <Col md={12} className="login-box">
+            <Col md={12}>
               <h1>Star Wars Login</h1>
-              <form name="loginForm" onSubmit={this.handleSubmit}>
+              <form name="loginForm">
                 <Row>
                   <Col md={12}>
                     <input

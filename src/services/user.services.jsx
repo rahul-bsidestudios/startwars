@@ -14,6 +14,7 @@ function login(userName, password) {
   return fetch(`${config.apiUrl}people/?search=${userName}`, requestOptions)
     .then(handleResponse)
     .then(data => {
+      console.log(data);
       if(data.results.length === 0) {
         return Promise.reject('Invalid User');
       }

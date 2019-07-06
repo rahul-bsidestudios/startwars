@@ -13,6 +13,7 @@ export default {
 };
 
 function login(email, password) {
+  console.log(email, password)
   return dispatch => {
     dispatch(request({ email }));
 
@@ -35,12 +36,12 @@ function login(email, password) {
     return { type: LOGIN_SUCCESS, user };
   }
   function failure(error) {
+    console.log(error)
     return { type: LOGIN_FAILURE, error };
   }
 }
 
 function logout() {
-  console.log(111)
   userService.logout();
   return { type: LOGOUT };
 }
